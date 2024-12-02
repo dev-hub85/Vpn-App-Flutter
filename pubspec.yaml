@@ -1,0 +1,56 @@
+# By Harsh H. Rajpurohit
+name: vpn_basic_project
+description: Flutter Android VPN based on OpenVPN Library.
+publish_to: "none"
+
+# App Version
+version: 1.0.2+2
+
+environment:
+  sdk: ">=3.4.3 <4.0.0"
+
+# App dependencies
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Getx for state management
+  get: ^4.6.6
+
+  # Cupertino style icons
+  cupertino_icons: ^1.0.8
+
+  # For API Call
+  http: ^1.2.1
+
+  # Converting CSV data to List
+  csv: ^6.0.0
+
+  # For Lottie Animation
+  lottie: ^3.1.2
+
+  # For storing data (in local storage)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Change package name
+  change_app_package_name: ^1.1.0
+
+  # Encourages good practices
+  flutter_lints: ^4.0.0
+
+flutter:
+  # Enabling material design
+  uses-material-design: true
+
+  # App assets
+  assets:
+    - assets/
+    - assets/vpn/
+    - assets/images/
+    - assets/lottie/
+    - assets/flags/

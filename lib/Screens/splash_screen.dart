@@ -12,9 +12,9 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 0), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => HomeScreen()));
+          context, MaterialPageRoute(builder: (context) => const HomeScreen()));
     });
   }
 
@@ -47,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   SizedBox(
                     height: height * 0.01,
                   ), // Adding space between logo and text
-                  Text(
+                  const Text(
                     'SafeNet',
                     style: TextStyle(
                       fontSize: 36,

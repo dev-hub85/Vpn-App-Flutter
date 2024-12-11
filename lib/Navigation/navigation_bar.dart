@@ -18,11 +18,11 @@ class _NavigationBarState extends State<NavBar> {
     super.dispose();
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomBarBubble(
+        color: Color.fromARGB(255, 1, 192, 125),
         items: [
           BottomBarItem(
             iconData: Icons.home,
@@ -69,4 +69,6 @@ class _NavigationBarState extends State<NavBar> {
           ),
         ],
       ),
-    );}}
+    );
+  }
+}
